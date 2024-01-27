@@ -265,7 +265,7 @@ http://blog.csdn.net/remote_roamer/article/details/14105999
 <script type="text/javascript" src="./学生成绩查询_files/captcha.js.下载"></script>
 <!-- form -start  -->
         
-<form id="searchForm" name="searchForm" onsubmit="return false;" action="https://jwgl.lyu.edu.cn/jwglxt/cjcx/cjcx_cxDgXscj.html" method="post" class="form-horizontal sl_all_form" novalidate="novalidate">
+<form id="searchForm" name="searchForm" onsubmit="return false;" action="/jwglxt/cjcx/cjcx_cxDgXscj.html" method="post" class="form-horizontal sl_all_form" novalidate="novalidate">
 <input type="hidden" name="jsxx" value="xs" id="jsxx">
 <input type="hidden" name="jslxdm" value="02" id="jslxdm">
 <input type="hidden" name="yhm" value="202292710133" id="yhm">
@@ -280,27 +280,7 @@ http://blog.csdn.net/remote_roamer/article/details/14105999
     <div class="form-group">
       <label for="" class="col-sm-4 control-label">学年<!-- 学年 --></label>
       <div class="col-sm-8">
-        <select name="xnm" id="xnm" class="form-control chosen-select" style="display: none;">
-    <option value="">全部</option>
-    <option value="2027">2027-2028</option>
-    <option value="2026">2026-2027</option>
-    <option value="2025">2025-2026</option>
-    <option value="2024">2024-2025</option>
-    <option value="2023" selected="selected">2023-2024</option>
-    <option value="2022">2022-2023</option>
-    <option value="2021">2021-2022</option>
-    <option value="2020">2020-2021</option>
-    <option value="2019">2019-2020</option>
-    <option value="2018">2018-2019</option>
-    <option value="2017">2017-2018</option>
-    <option value="2016">2016-2017</option>
-    <option value="2015">2015-2016</option>
-    <option value="2014">2014-2015</option>
-    <option value="2013">2013-2014</option>
-    <option value="2012">2012-2013</option>
-
-
-</select>
+        <div class="chosen-container chosen-container-single" style="width: 100%; z-index: 1009;" title="" id="xnm_chosen"><a class="chosen-single" tabindex="-1"><span>2023-2024</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" name="autocomplete"></div><ul class="chosen-results"></ul></div></div>
 
 
 		  <script type="text/javascript">
@@ -315,13 +295,7 @@ http://blog.csdn.net/remote_roamer/article/details/14105999
     <div class="form-group">
       <label for="" class="col-sm-4 control-label">学期<!-- 学期 --></label>
       <div class="col-sm-8">
-        <select name="xqm" id="xqm" class="form-control chosen-select success" style="display: none;" aria-invalid="false">
-    <option value="">全部</option>
-    <option value="3">1</option>
-    <option value="12" selected="selected">2</option>
-
-
-</select>
+        <div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 100%; z-index: 1010;" title="" id="xqm_chosen"><a class="chosen-single" tabindex="-1"><span>1</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" name="autocomplete" readonly=""></div><ul class="chosen-results"><li class="active-result" data-option-array-index="0" style="">全部</li><li class="active-result" data-option-array-index="1" style="">1</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li></ul></div></div>
 
 
 		  <script type="text/javascript">
@@ -338,17 +312,8 @@ http://blog.csdn.net/remote_roamer/article/details/14105999
 		<div class="form-group">
 			<label for="" class="col-sm-4 control-label">课程标记</label>
 			<div class="col-sm-8">
-				<select name="kcbjdm" id="kcbjdm_cx" class="form-control chosen-select" style="display: none;">
-    <option value="">全部</option>
-    <option value="0">主修</option>
-    <option value="1">辅修</option>
-    <option value="2">二专业</option>
-    <option value="3">二学位</option>
-    <option value="4">非学位</option>
-    <option value="8">二学位转一专</option>
+				<div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 100%; z-index: 1009;" title="" id="kcbjdm_cx_chosen"><a class="chosen-single" tabindex="-1"><span>全部</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" name="autocomplete" readonly=""></div><ul class="chosen-results"></ul></div></div>
 
-
-</select>
 
 				<script type="text/javascript">
 					jQuery('#kcbjdm_cx').trigger("chosen");
@@ -362,7 +327,6 @@ http://blog.csdn.net/remote_roamer/article/details/14105999
 </div>
  
 </form>
-
 
 
 <!-- form -end  -->
