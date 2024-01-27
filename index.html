@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&_t=1706323808948 -->
+<html lang="zh-CN" class="desktop landscape"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>教学管理信息服务平台</title>
+	
+
+
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="Copyright" content="zfsoft">	
+<link rel="icon" href="https://jwgl.lyu.edu.cn/jwglxt/logo/favicon.ico?t=1706323809826" type="image/x-icon">
+<link rel="shortcut icon" href="https://jwgl.lyu.edu.cn/jwglxt/logo/favicon.ico?t=1706323809826" type="image/x-icon">
+<style type="text/css">	
+	.active{font-weight: bolder;}
+	#navbar-tabs li{ margin-top: 2px;}
+	#navbar-tabs li a{ border-top: 2px solid transparent;}
+	#navbar-tabs li.active a{border-top: 2px solid #0770cd;}
+</style>
+
+
+	
+<!--jQuery核心框架库 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.min.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery-migrate.min.js.下载"></script>
+<!--jQuery浏览器检测 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/browse-judge.js.下载"></script>
+<script type="text/javascript">
+	//浏览器版本验证
+	var broswer = broswer();
+	if(broswer.msie==true||broswer.safari==true||broswer.mozilla==true||broswer.chrome==true){
+		if(broswer.msie==true&&broswer.version<9){
+		   window.location.href = _path+"/xtgl/init_cxBrowser.html";
+		}
+	}else{
+		 window.location.href = _path+"/xtgl/init_cxBrowser.html";
+	}
+</script>
+<script type="text/javascript">
+var _path 				= "/jwglxt";
+var _systemPath 		= "/jwglxt";
+var _stylePath 			= "/zftal-ui-v5-1.0.2";
+var _reportPath 		= "https://jwgl.lyu.edu.cn/WebReport";
+var _refreshInterval	= "10";
+var _localeKey 			= "zh_CN";
+</script>
+<!--
+jquery.ui 需要在bootstrap之前加载，解决冲突问题
+http://blog.csdn.net/remote_roamer/article/details/14105999
+-->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery-ui-custom.contact-1.0.0.js.下载"></script>
+<!--Bootstrap布局框架-->
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/error.css">
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/zftal-ui.css">
+<script type="text/javascript" src="./教学管理信息服务平台_files/bootstrap.min.js.下载" charset="utf-8"></script>
+<!--jQuery常用工具扩展库：基础工具,资源加载工具,元素尺寸相关工具 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.utils.contact-min.js.下载" charset="utf-8"></script>
+<!--jQuery基础工具库：$.browser,$.cookie,$.actual等 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.plugins.contact-min.js.下载" charset="utf-8"></script>
+<!--jQuery自定义event事件库 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.events.contact-min.js.下载" charset="utf-8"></script>
+<!--JavaScript对象扩展库：Array,Date,Number,String -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.extends.contact-min.js.下载" charset="utf-8"></script>
+<!--Bootbox弹窗插件-->
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/bootbox.css">
+<script src="./教学管理信息服务平台_files/bootbox.concat-min.js.下载" type="text/javascript" charset="utf-8"></script>
+<script src="./教学管理信息服务平台_files/zh_CN.js.下载" type="text/javascript" charset="utf-8"></script>
+
+<!--jQuery模拟滚动条库-->
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/jquery.mCustomScrollbar.min.css">
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.mCustomScrollbar.min.js.下载" charset="utf-8"></script>
+<!--jQuery.chosen美化插件-->
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/chosen-min.css">
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.choosen.concat-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/zh_CN-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.utils.pinyin.min.js.下载" charset="utf-8"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/html5shiv.min.js?ver=28427099" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/respond.min.js?ver=28427099" charset="utf-8"></script>
+<![endif]-->
+<!--业务框架jQuery全局设置和通用函数库-->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.zftal.contact-min.js.下载"></script>
+<!--国际化js库 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.i18n-min.js.下载" charset="utf-8"></script>
+<!--全局国际化js. -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/i18n-global_zh_CN.js.下载" charset="utf-8"></script>
+<!--业务框架前端脚本国际化库-->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.zftal_zh_CN-min.js.下载"></script>
+<!--密码强弱判断-->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.utils.strength.min.js.下载"></script>
+<!--jQuery浏览器检测 -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/device.js.下载"></script>
+
+	
+	
+
+
+
+
+	<!--jQueryï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½â£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ô´ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½,Ôªï¿½Ø³ß´ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½ -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.utils.contact-min.js(1).下载" charset="utf-8"></script>
+<!--jQueryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -->
+<script type="text/javascript" src="./教学管理信息服务平台_files/browse-judge.js(1).下载"></script>
+<script type="text/javascript">
+	//\u6d4f\u89c8\u5668\u7248\u672c\u9a8c\u8bc1
+	var intBro = broswer();
+	if(intBro.msie==true||intBro.safari==true||intBro.mozilla==true||intBro.chrome==true){
+		if(intBro.msie==true&&intBro.version<9){
+		   window.location.href = _path+"/xtgl/init_cxBrowser.html";
+		}
+	}else{
+		 window.location.href = _path+"/xtgl/init_cxBrowser.html";
+	}
+</script>
+	<link type="text/css" rel="stylesheet" href="./教学管理信息服务平台_files/jw-index.css">
+	
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">	
+
+</head>
+<body class="body-container">
+	<!-- 放置页面显示内容 -->
+	
+<!-- requestMap中的参数为系统级别控制参数x，请勿删除 -->
+<form id="requestMap" style="display:none;">
+	<input type="hidden" id="sessionUserKey" value="202292710133">
+	<input type="hidden" id="gnmkdmKey" value="index">
+	<input type="hidden" id="login_type" value="">
+	<input type="hidden" name="info" value="" id="info">
+	<input type="hidden" name="xxdm1" value="10452" id="xxdm1">
+</form>
+<!-- top -->
+<input type="hidden" name="dstjdlztsj" value="" id="dstjdlztsj">
+<input type="hidden" name="fxjfjzrqqjtts" value="0" id="fxjfjzrqqjtts">
+<input type="hidden" name="dlztxxtj_id" value="" id="dlztxxtj_id">
+<input type="hidden" name="sftjdlztxx" value="0" id="sftjdlztxx">
+<input type="hidden" name="sfgbxssyxs" value="0" id="sfgbxssyxs">
+<input type="hidden" name="sytzywdyywzhh" value="0" id="sytzywdyywzhh">
+<input type="hidden" name="jsdm" value="xs" id="jsdm">
+<input type="hidden" name="csrfToken" value="" id="csrfToken">
+<input type="hidden" name="xsxkzt" value="3" id="xsxkzt">
+<input type="hidden" name="sytxzt" value="3" id="sytxzt">
+<input type="hidden" name="sfkqypxlhbdfwxz" value="0" id="sfkqypxlhbdfwxz">
+<input type="hidden" name="xssymxjyjtxfs" value="0" id="xssymxjyjtxfs">
+<input type="hidden" name="xsXyyjcs" value="0" id="xsXyyjcs">
+<input type="hidden" name="xsxjyjqrzt" value="" id="xsxjyjqrzt">
+<input type="hidden" name="sfkqbsxtsjtx" value="0" id="sfkqbsxtsjtx">
+<input type="hidden" name="sfkqxfqrsjtx" value="0" id="sfkqxfqrsjtx">
+<input type="hidden" name="sfkqlyyjtx" value="0" id="sfkqlyyjtx">
+<input type="hidden" name="sfkqcdhsjktx" value="" id="sfkqcdhsjktx">
+<input type="hidden" name="sfkqjsjkxxtx" value="" id="sfkqjsjkxxtx">
+<input type="hidden" name="wbdgrxxtx" value="" id="wbdgrxxtx">
+<input type="hidden" name="kksytcyjkg" value="0" id="kksytcyjkg">
+<input type="hidden" name="mxqyxwxkctskg" value="0" id="mxqyxwxkctskg">
+<input type="hidden" name="xxkwdbyyqxftskg" value="0" id="xxkwdbyyqxftskg">
+<input type="hidden" name="sfkzxs" value="0" id="sfkzxs">
+<input type="hidden" name="sfqztxmb" value="0" id="sfqztxmb">
+<input type="hidden" name="mbtxqk" value="0" id="mbtxqk">
+<input type="hidden" name="dingdingbj" value="0" id="dingdingbj">
+<input type="hidden" name="xspjsytsy" value="" id="xspjsytsy">
+<input type="hidden" name="thpjsytsy" value="" id="thpjsytsy">
+<input type="hidden" name="ddpjsytsy" value="" id="ddpjsytsy">
+<input type="hidden" name="ldpjsytsy" value="" id="ldpjsytsy">
+<div class="navbar navbar-default navbar-static-top top1">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand logo_2" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#">
+
+				<img src="./教学管理信息服务平台_files/logo_jw_w.png" style="margin-top:-3px;height: 60px">
+			<span id="xtmc">临沂大学教学管理信息服务平台</span>
+			</a>
+			<button type="button" id="exit_btn" style="width:44px;height:34px;" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse-js" aria-expanded="false">
+			退出
+			</button>
+			<button type="button" id="js_btn" style="width:44px;height:34px;" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse-js" aria-expanded="false">
+				<img style="margin-top: 3.5px;margin-left: 2.5px;position:relative;top:-9px;position:relative;left:-10px;" src="./教学管理信息服务平台_files/user_logo.jpg" width="42" height="32">
+			</button>
+			
+			<!--  -->
+			<button type="button" id="cd_btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+				<span class="sr-only">功能菜单</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!--  -->
+		</div>
+		<!-- <ul class="nav navbar-nav navbar-right hidden-xs" style="display:block !important"> -->
+		<ul class="nav navbar-nav navbar-right  hidden-xs">
+				<li>
+					<form class="navbar-form ">
+			<!-- 			<input type="text" class="form-control" placeholder="搜索服务功能"> -->
+					  	
+					  	
+					  	 
+					</form>
+					</li>
+					
+					
+					
+					
+					
+					
+			<li>
+				<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="dropdown-toggle grxx" data-toggle="dropdown"><img src="./教学管理信息服务平台_files/user_logo.jpg" width="28" height="28"></a>
+				<ul class="dropdown-menu">
+					
+					
+					<li class="divider"></li>
+					<li><a href="javascript:void(0);" id="updatePassword"><i class="top_png mm"></i>修改密码</a></li>
+					
+					
+					
+					<li class="divider"></li>
+					<li><a href="javascript:void(0);" id="exit"><i class="top_png tc"></i>退出</a></li>
+				</ul>
+			</li>
+		</ul>
+		<form class="navbar-form navbar-right">
+			
+		  	
+		  	
+		  	
+		  		
+		  		
+		  		 <input type="hidden" name="language" value="zh_CN" id="localChange">
+		  		
+		</form>
+	</div>
+</div>
+<!-- top-end -->
+
+<!-- 角色 -->
+<div class="navbar_index" id="myDiv" style="display:none">
+	<div class="container">
+	 	<nav id="jsNav" class="navbar-collapse bs-navbar-collapse-js collapse" role="navigation" aria-expanded="false">
+	 	<ul class="nav navbar-nav">
+			 
+                <li class="dropdown">
+                	
+                	<!-- <a id="drop_N03" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                	自定义功能管理<b class="caret"></b> </a> -->
+                		<a tabindex="-1" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+		                	学生
+		                	<span class="glyphicon glyphicon-ok float_r"></span>
+                		</a>
+                	
+                	
+                </li>
+            
+		</ul>
+	  	</nav>
+	</div>
+</div>
+
+<!-- 菜单  -->
+<div class="navbar_index">
+	<div class="container" id="myDiv1">
+	 	<nav id="cdNav" class="navbar-collapse bs-navbar-collapse collapse" role="navigation" aria-expanded="false">
+     	  	<ul class="nav navbar-nav"><li class="dropdown"><a id="drop1" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" role="button" class="dropdown-toggle" data-toggle="dropdown">报名申请<b class="caret"></b> </a><ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> <li><a tabindex="-1" onclick="clickMenu(&#39;N1053&#39;,&#39;/fxgl/fxbm_cxXsfxbmIndex.html&#39;,&#39;辅修报名&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">辅修报名</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N1056&#39;,&#39;/cxbm/cxbm_cxXscxbmIndex.html&#39;,&#39;重修报名&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">重修报名</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N106005&#39;,&#39;/xszbbgl/xszbbgl_cxXszbbsqIndex.html?doType=details&#39;,&#39;学生证补办申请&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生证补办申请</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N106204&#39;,&#39;/xszzy/xszzysqgl_cxXszzysqIndex.html?doType=details&#39;,&#39;学生转专业申请&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生转专业申请</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N250731&#39;,&#39;/jxrwbmgl/bjkgl_cxBjkblIndex.html&#39;,&#39;保健课办理&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">保健课办理</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N2510&#39;,&#39;/kjgl/kjbm_cxXskjbm.html?xmlbfl=1001&#39;,&#39;考级项目报名&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">考级项目报名</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N2511&#39;,&#39;/jxrwbmgl/jxrwxmbm_cxJxrwxmbmIndex.html&#39;,&#39;教学项目报名&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">教学项目报名</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N303010&#39;,&#39;/cjfcgl/cjfcsq_cxCjfcsqIndex.html&#39;,&#39;成绩复查申请&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">成绩复查申请</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N309540&#39;,&#39;/tcgl/tchkgl_cxTchksqIndex.html&#39;,&#39;体测免测申请&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">体测免测申请</a></li></ul></li><li class="dropdown"><a id="drop1" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" role="button" class="dropdown-toggle" data-toggle="dropdown">信息维护<b class="caret"></b> </a><ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> <li><a tabindex="-1" onclick="clickMenu(&#39;N100808&#39;,&#39;/xsxxxggl/xsgrxxwh_cxXsGrxxxgIndex.html&#39;,&#39;学生个人信息维护&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生个人信息维护</a></li></ul></li><li class="dropdown"><a id="drop1" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" role="button" class="dropdown-toggle" data-toggle="dropdown">选课<b class="caret"></b> </a><ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> <li><a tabindex="-1" onclick="clickMenu(&#39;N253512&#39;,&#39;/xsxk/zzxkyzb_cxZzxkYzbIndex.html&#39;,&#39;自主选课&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">自主选课</a></li></ul></li><li class="dropdown"><a id="drop1" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">信息查询<b class="caret"></b> </a><ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> <li><a tabindex="-1" onclick="clickMenu(&#39;N100801&#39;,&#39;/xsxxxggl/xsgrxxwh_cxXsgrxx.html&#39;,&#39;查询个人信息&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">查询个人信息</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N105508&#39;,&#39;/bygl/bysh_cxByshjgHcIndex.html&#39;,&#39;毕业审核结果核查&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">毕业审核结果核查</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N2151&#39;,&#39;/kbcx/xskbcx_cxXskbcxIndex.html&#39;,&#39;学生个人课表查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生个人课表查询</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N2155&#39;,&#39;/cdjy/cdjy_cxKxcdlb.html&#39;,&#39;查询空闲教室&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">查询空闲教室</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N2158&#39;,&#39;/kbcx/xskbqr_cxXskbqrIndex.html?doType=details&#39;,&#39;学生选课情况确认&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生选课情况确认</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N255010&#39;,&#39;/xkcx/xkmdcx_cxXkmdcxIndex.html&#39;,&#39;选课名单查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">选课名单查询</a></li> 
+			<li><a tabindex="-1" href="cjcx/cjcx_cxDgXscj.html" target="_blank">学生成绩查询</a></li> 
+			<li><a tabindex="-1" onclick="clickMenu(&#39;N358105&#39;,&#39;/kwgl/kscx_cxXsksxxIndex.html&#39;,&#39;考试信息查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">考试信息查询</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N255730&#39;,&#39;/cxzdcx/cxzdcx_cxCxzdcxIndex.html&#39;,&#39;重修指导查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">重修指导查询</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N305516&#39;,&#39;/xyyjjk/xyyjclcx_cxXyyjclcxxsIndex.html&#39;,&#39;学业预警处理查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学业预警处理查询</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N3080099&#39;,&#39;/design/viewFunc_cxDesignFuncPageIndex.html&#39;,&#39;体测成绩查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">体测成绩查询</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N105515&#39;,&#39;/xsxy/xsxyqk_cxXsxyqkIndex.html&#39;,&#39;学生学业情况查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生学业情况查询</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N2154&#39;,&#39;/kbcx/xskbcxZccx_cxXskbcxIndex.html&#39;,&#39;学生周课表查询&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生周课表查询</a></li></ul></li><li class="dropdown"><a id="drop1" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" role="button" class="dropdown-toggle" data-toggle="dropdown">教学评价<b class="caret"></b> </a><ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> <li><a tabindex="-1" onclick="clickMenu(&#39;N401605&#39;,&#39;/xspjgl/xspj_cxXspjIndex.html?doType=details&#39;,&#39;学生评价&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">学生评价</a></li> <li><a tabindex="-1" onclick="clickMenu(&#39;N401650&#39;,&#39;/xspjgl/kcgcpj_cxKcgcpjxxIndex.html&#39;,&#39;“老师，我想对您说”问卷调研&#39;,&#39;null&#39;); return false;" href="javascript:void(0);" rel="noopener noreferrer" target="_blank">“老师，我想对您说”问卷调研</a></li></ul></li></ul>	
+	  	</nav>
+	</div>
+</div>
+
+<!-- 主体 -->
+<div class="container padding-150">
+	<div class="row" style="height: 81vh">
+		<div class="col-md-3 col-sm-4" style="height: 100%;">
+			
+				<div class="index_wdyy" style="height: 99.4%;max-height: none;">
+					
+					
+						<h3><span>我的应用</span><a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="sz" id="wdyy_szbtn"></a></h3>
+						<ul class="list-unstyled mCustomScrollbar _mCS_1 mCS_no_scrollbar" id="index_wdyy" style="height: 350px;"></ul>
+					
+				</div>
+			
+			
+		</div>
+		<div class="col-md-9 col-sm-8">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="index_grxx">
+						<div class="row">
+							<div class="col-md-5" id="yhxxIndex" style="border-right: 1px solid #eeeeee;">
+
+
+	
+
+
+
+	
+	
+
+
+<input type="hidden" name="xxdm1" value="10452" id="xxdm1">
+<div class="media">
+	
+	<a class="pull-left" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#">
+		
+		
+			
+			
+				
+					<img class="media-object" alt="110x110" src="./教学管理信息服务平台_files/photo_cxXszp.html" style="width: 110px; height: 110px;">
+				
+				
+				
+			
+		
+
+		<!-- data-src="holder.js/110x110" -->
+	</a>
+	<div class="media-body">
+		
+		
+			<h4 class="media-heading">宋传栋&nbsp;&nbsp;学生</h4>
+		
+		
+		
+			<p>沂水校区 沂水软件技术22级专科1班</p>
+
+			
+<!-- 			<div class="progress"> -->
+
+
+<!-- 				</div> -->
+<!-- 				<a href="#">详细</a> -->
+<!-- 			</div> -->
+			
+
+		
+	</div>
+</div>
+
+</div>
+							
+								<div class="col-md-7" id="newsnotice" style="height: 165px;overflow:auto">
+
+
+
+<style type="text/css">
+	.text-show {
+	    display: inline-block;
+		max-width: calc(100% - 80px);
+		text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size:small;
+	}
+	
+	.title-more{
+		font-size:16px;
+		padding-right:15px;
+		margin-top:-34px;
+	}
+	#mCSB_2 { height: calc(100% - 1px); }
+</style>
+
+
+<script type="text/javascript">
+if($("#sytzywdyywzhh").val()=='1'){
+	$("span.xwxx").addClass("text-show");
+}
+</script>
+
+
+
+
+
+
+	<h5 class="index_title">
+		<span class="title">
+			通知
+			
+				
+			
+			
+		</span>
+	</h5>
+
+
+<div class="tab-content mCustomScrollbar _mCS_3 mCS_no_scrollbar" id="xw-main"><div id="mCSB_3" class="mCustomScrollBox mCS-dark-3 mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+	<div class="list-group">
+		
+	</div>
+</div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-dark-3 mCSB_scrollTools_vertical" style="display: none;"><a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="mCSB_buttonUp" oncontextmenu="return false;"></a><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div><a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="mCSB_buttonDown" oncontextmenu="return false;"></a></div></div></div>
+</div>
+							
+								
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="index_rctx" id="area_one">
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/shjd-style.css">
+		<style>
+		@media screen and (min-width:375px) and (max-width:768px) {
+		.navbar-header .navbar-brand{width:auto!important;}
+		}
+		</style>
+		
+	
+	<style>
+		table { table-layout: fixed;}
+		table tr td {
+		    overflow:hidden;
+		    white-space:nowrap;
+		    text-overflow:ellipsis;
+		    -o-text-overflow:ellipsis;
+		    -moz-text-overflow: ellipsis;
+		    -webkit-text-overflow: ellipsis;
+		}
+		
+		
+	</style>
+
+
+<input type="hidden" name="xxdm" value="10452" id="xxdm">
+<input type="hidden" name="role" value="xs" id="role">
+<input type="hidden" name="xnm" value="2023" id="xnm">
+<input type="hidden" name="xqm" value="12" id="xqm">
+<input type="hidden" name="dqzc" value="1" id="dqzc">
+<input type="hidden" name="sysfxszckb" value="1" id="sysfxszckb">
+
+<div id="kbDiv">
+	<ul class="nav nav-tabs sl_nav_tabs" id="kbTab">
+		<li>
+			<a data-toggle="tab" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#qbkb">
+				<h5 class="index_title"><span class="title">课表</span></h5>
+			</a>
+		</li>
+		<li class="active">
+			<a data-toggle="tab" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#class-zkb" onclick="clickOnTab(1)">
+				<h5 class="index_title"><span class="title">周课表</span></h5>
+			</a>
+		</li>
+	</ul>
+
+</div>
+
+<div class="tab-content">
+	<div id="qbkb" class="tab-pane">
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			
+				
+			
+	</div>
+	<div id="class-zkb" class="tab-pane in active"><h3 class="align-center"><div class="nodata"><span>该学年学期尚无您的课表！</span></div></h3></div>
+</div>
+
+
+ 	<script type="text/javascript">
+ 		
+		//学生绑定导出操作
+	    $("#xsmd").click(function () {
+	    	var arrs=new Array();
+	    	$("table").find(":checkbox:checked").each(function(){
+			    var val = $(this).parent().next().val();
+			    arrs.push(val);
+			}); 
+			if(arrs.length == 0){
+				$.alert("请选择教学班!");
+				return false;
+			} 
+			if(arrs.length > 1){
+				$.alert("只能选择一个教学班!");
+				return false;
+			}
+			var paramMap = {
+					"jxbArr"  : arrs.toString()
+				};
+			$.buildForm("downForm",_path+"/xsxkjk/xsxkcx_mddcList.html", paramMap).submit();
+		});
+		//点名册导出
+		$("#dmd").click(function(){
+			var arrs=new Array();
+			var jxbNames=new Array();
+			$("table").find(":checkbox:checked").each(function(){
+			    var val = $(this).parent().next().val();
+			    arrs.push(val);
+			    jxbNames.push($(this).parent().next().next().val())
+			}); 
+			if(arrs.length == 0){
+				$.alert("请选择教学班!");
+				return false;
+			} 
+			if(arrs.length > 1){
+				$.alert("只能选择一个教学班!");
+				return false;
+			}
+			var paramMap = {
+					"jxbArr"  : arrs.toString()
+				};
+
+			$.openReport({
+				"reportID" 		: "jsdmcdy.cpt",
+				"jxb_id"		: arrs.join(','),
+				"xnm"			: $("#xnm").val(),
+				"xqm"			: $("#xqm").val(),
+				/* "kkbm_id"	    : $('#kkxy_id').val(), 
+				"kch"		: $('#kch').val(),*/
+				"jxbmc"		: jxbNames.join(',')
+				/*"njdm":$("#sfyx_arr").val(),
+				"kcxzdm":$('#kcxzdm_cx').val(),
+				 "jsbm":$('#jsbm_id').val(),
+				"jsxm":$('#rkjs').val() */
+			});
+		});
+		
+		//小课表导出
+		$("#xkb").click(function(){
+			var arrs=new Array();
+			$("table").find(":checkbox:checked").each(function(){
+			    var val = $(this).parent().next().val();
+			    arrs.push(val);
+			}); 
+			if(arrs.length == 0){
+				$.alert("请选择教学班!");
+				return false;
+			} 
+			if(arrs.length > 1){
+				$.alert("只能选择一个教学班!");
+				return false;
+			}
+			var paramMap = {
+					"jxbArr"  : arrs.toString()
+				};
+			$.buildForm("downForm",_path+"/xkcx/xsdmccx_dyXkb.html",paramMap).submit();
+		});
+		
+ 	    //学生教学班成绩单导出
+		$("#cjd").click(function(){
+			var arrs=new Array();
+			var jxbNames=new Array();
+		    $("table").find(":checkbox:checked").each(function(){
+		        var val = $(this).parent().next().val();
+		        arrs.push(val);
+		        jxbNames.push($(this).parent().next().next().val())
+		     });
+			if(arrs.length == 0){
+				$.alert("请选择教学班!");
+				return false;
+			} 
+			if(arrs.length > 1){
+				$.alert("只能选择一个教学班!");
+				return false;
+			}
+			var paramMap = {
+					"jxbArr"  : arrs.toString(),
+					"jxbMc"   : jxbNames.toString()
+				};
+			$.buildForm("downForm",_path+"/cjcx/cjcxjxb_dcList.html", paramMap).submit();
+		});
+ 	    
+		function zcparamMap(){
+	 		var map = {};	
+	 		map["xnm"] = $('#xnm').val();
+	 		map["xqm"] = $('#xqm').val();
+	 		map["zs"] = $('#dqzc').val();
+	 		return map;
+	 	}
+		//显示字段
+	 	var xszd = {'sj':true, 'cd': true, 'jxbzc': true, 'jxbrs':true};
+	 	var jsxx;
+	 	var xsxx;
+	 	var xkkg=true;
+	 	var kblen=1;//课表List长度
+	 	var sjklen=1;//实践课List长度
+	 	var haveXX=1;
+	 	var xqh_ids = [];
+	 	function clickOnTab(num){
+	 		if(num==1){
+				var kburl="";
+				var Rsdurl="";
+				
+				if($("#role").val()=='js'){
+					kburl=_path+"/kbcx/jskbcx_cxJsKb1.html";
+					Rsdurl=_path+"/kbcx/jskbcx_cxRsd.html";
+				}else if($("#role").val()=='xs'){
+					kburl=_path+"/kbcx/xskbcx_cxXsKb.html"
+					Rsdurl= _path+"/kbcx/xskbcx_cxRsd.html";
+				}else{
+					return ;
+				}
+				$.ajax({
+					type: 'POST', 
+					url:kburl,
+					async: false,
+					data: zcparamMap(), 
+					success: function(data){
+						$("#class-zkb").empty();
+						if(data==null){
+							return ;
+						}
+						var kblx = data.kblx; //获取课表类型
+						xkkg = data.xkkg; //选课开关
+						if($("#role").val()=='js'){
+							if(!$.defined(data.jsxx)){
+		 						haveXX = 0;
+		 						$("#class-zkb").append("<h3 class='align-center'>无您的基本信息，请与管理员联系！</h3>");
+		 						return ;
+		 					}
+							jsxx = data.jsxx;
+			 			}else if($("#role").val()=='xs'){
+			 				if(!$.defined(data.xsxx)){
+			 					haveXX=0;
+			 					$("#class-zkb").append("<h3 class='align-center'><div class='nodata'><span>该学年学期无您的注册信息，请与管理员联系！</span></div></h3>");
+			 					return ;
+			 				}
+			 				xsxx = data.xsxx; 
+			 				var xsxxdm = xsxx.XXDM||'';
+		 					var xskbsfxstkzt = data.xskbsfxstkzt||0;//学生课表是否显示调课状态 
+			 			}
+						var kbList = data.kbList||[]; //获取课表数据
+						var sjkList = data.sjkList||[];//获取实践课数据
+						sjklen=sjkList.length;
+						kblen=kbList.length;
+						if(kblen==0 && xkkg && sjklen == 0){ //如果没有课表数据
+							$("#class-zkb").append("<h3 class='align-center'><div class='nodata'><span>该学年学期尚无您的课表！</span></div></h3>");
+							return ;
+						}else if(!xkkg){
+							$("#class-zkb").append("<h3 class='align-center'><div class='nodata'><span>该学年学期的课表尚未开放！</span></div></h3>");
+						}
+					
+						var html1="";
+			 			html1="<table class='class-bxqkb class-xq class-comtb' id='zkb'>";
+			 			html1+="<thead><tr class='funth'><th colspan='"+(kblx+1)+"'>";
+			 			if($("#role").val()=='xs'){
+			 				html1+="<span class='tit' style='width:200px;'>"+xsxx.XNMC+"学年"+(xsxx.XQM==3?"第1学期":(xsxx.XQM==3?"第1学期":"第2学期"))+"第"+$("#dqzc").val()+"周"+"</span>";
+			 			}else if($("#role").val()=='js'){
+			 				html1+="<span class='tit' style='width:200px;'>"+jsxx.XNMC+"学年"+(jsxx.XQM==3?"第1学期":(jsxx.XQM==3?"第1学期":"第2学期"))+"第"+$("#dqzc").val()+"周"+"</span>";
+			 			}
+			 			html1+="</th></tr>";
+			 			if(kblx==5){
+			 				html1+="<tr class='thbg'><th width='80'>节次</th><th>星期一</th><th>星期二</th><th>星期三</th><th>星期四</th><th>星期五</th></tr></thead>";
+			 			}else{
+			 				html1+="<tr class='thbg'><th width='80'>节次</th><th>星期一</th><th>星期二</th><th>星期三</th><th>星期四</th><th>星期五</th><th>星期六</th><th>星期日</th></tr></thead>";	
+			 			}
+			 			html1+="<tbody>";
+						for(var i=0; i<kbList.length; i++){
+							var item = kbList[i];
+							var xqj = item.xqj; //星期
+							var jcs = item.jcs; //节次
+							var xqh_id = item.xqh_id; //校区号
+							var xqdm = item.xqdm; //校区归属
+							if(jQuery.inArray(xqh_id,xqh_ids) == -1){
+								xqh_ids.push(xqh_id);
+							}
+						    var kbrsd; //获取日时段信息,得到节次结构,及上下午列是否显示
+							$.ajax({
+								type: 'POST', 
+								url: Rsdurl,
+								async: false,
+								data: {"xnm":zcparamMap().xnm, "xqm":zcparamMap().xqm, "xqh_id": xqh_id},
+								datatype: 'json',
+								success: function(data){
+									kbrsd = data; //获得数据
+								}
+							});
+							if(kbrsd.length==0){
+								$("#class-zkb").empty().append("<h3 class='align-center'>日节次设置有误</h3>");
+								return false;
+							}
+							if(i==0){
+								var qsjc = 1; 
+								$.each(kbrsd, function(index, item){
+									var rsdzjs = item.rsdzjs;
+									for(var k = 1; k <= rsdzjs; k++){
+										html1+="<tr>";
+										html1+="<td><span class='festival'>"+qsjc+"</span></td>";
+										for(var k1 = 1; k1 <= kblx; k1++){
+											html1+="<td rowspan=1 id='"+k1+"-"+qsjc+"' class='td_wrap'></td>";
+										}
+										qsjc += 1;
+										html1+="</tr>";
+									}
+								});
+							}
+						}
+			 			html1+="</tbody></table>";
+			 			$("#class-zkb").append(html1);
+			 			
+			 			for(var i=0; i<kbList.length; i++){
+			 				var item1 = kbList[i];
+			 				var xqj1 = item1.xqj; //星期
+			 				var sjtbspan = (xszd.sj==true)?"<p class='campus'>"+"("+item1.jc+")"+item1.zcd+"</p>":"";
+							var cdtbspan = (xszd.cd==true)?"<p class='room'>"+item1.xqmc+" "+item1.cdmc+"</p>":"";
+							//var jxbtbspan = (xszd.jxb==true)?"<p><span data-toggle='tooltip' data-placement='top' title='教学班名称'><span class='glyphicon glyphicon-home'></span></span> "+item1.jxbmc+"</p>":"";
+							//var jxbzctbspan = (xszd.jxbzc==true)?"<p><span data-toggle='tooltip' data-placement='top' title='教学班组成'><span class='glyphicon glyphicon-home'></span></span> "+item1.jxbzc+"</p>":"";
+						var jcor = item1.jcor;
+						var jcValueArr = jcor.split("-");
+						var jcValue1 = jcValueArr[0];
+						var jcValue2 = jcValueArr[1];
+						var tdEle = $("#zkb").find("#"+xqj1+"-"+jcValue1);
+						//var tdHtml= "<div class='lesson les-sty2'><h4 class='tit'>"+item1.kcmc+(item1.xslxbj||'')+"</h4>"+sjtbspan+cdtbspan+jxbtbspan+jxbzctbspan+"</div>";
+						var tdHtml= "<div class='lesson les-sty2' style='position:static' ><h4 class='tit'>"+item1.kcmc+(item1.xslxbj||'')+"</h4>"+sjtbspan+cdtbspan+"<div class='lesson-flow'>"+"<h4>"+item1.kcmc+(item1.xslxbj||'')+"</h4>"+"<p>"+"("+item1.jc+")"+item1.zcd+"</p>";
+						tdHtml+="<p>"+item1.xqmc+" "+item1.cdmc+"</p>"+"<p>"+item1.jxbmc+"</p>"+"</div>"+"</div>"; 
+					/* var tdHtml= "<div class='lesson les-sty2'><h4 class='tit'>"+item1.kcmc+(item1.xslxbj||'')+"</h4>"+sjtbspan+cdtbspan+"</div>"; */
+						 tdEle.append(tdHtml).attr("rowspan", jcValue2-jcValue1+1);
+						 for(var j = jcValue1*1+1; j <= jcValue2; j++){
+							$("#zkb").find("#"+xqj1+"-"+j).remove();
+						}  
+			 			}
+			 			
+					}
+				});
+			}
+	 		}
+	 	if($("#sysfxszckb").val()=='1'){
+ 			//debugger;
+ 			clickOnTab(1);
+ 		}
+	</script> 
+</div>
+				</div>
+				<div class="col-md-7">
+					
+						
+							<div class="index_rctx mCustomScrollbar _mCS_2" id="area_five"><div id="mCSB_2" class="mCustomScrollBox mCS-dark-3 mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+
+
+<style type="text/css">
+.index_rctx .list-group-item .time {
+    float: right;
+    margin-left: 10px;
+    color: #858585;
+    font: normal 12px/39px SimSun;
+}
+</style>
+
+<style type="text/css">
+	.nextDay{background-color:#f0ad4e !important;color: #FFFFFF;}
+	td{text-align: center;}	
+</style>
+<style type="text/css">
+	.nextDay2{background-color:blue !important;color: #FFFFFF; }
+	td{text-align: center;}	
+</style>
+
+<h5 class="index_title"><span class="title">日历</span></h5>
+
+ 
+
+
+<div class="table-responsive">
+	<table class="table table-bordered tab-bor-col-1 tab-td-padding-2 tab-td-font-12 tab-td-center" style="min-width: 800px;">
+	<input type="hidden" name="rcStr" value="" id="rcStr">
+	<input type="hidden" name="dqrq" value="2024-01-27" id="dqrq">
+ <thead>
+ 
+  <tr class="tab-th-1">
+  		
+   		
+   			<th rowspan="3" class="xl_jb">&nbsp;</th>
+	    	
+	    		<th colspan="21" style="text-align: center">2023-2024学年2学期(2024-03-04至2024-07-14)</th>
+	    	
+   		
+  </tr>
+  
+  <tr class="tab-th-1">
+   		
+    		<th colspan="4" style="text-align: center">3月</th>
+    	
+    		<th colspan="5" style="text-align: center">4月</th>
+    	
+    		<th colspan="5" style="text-align: center">5月</th>
+    	
+    		<th colspan="5" style="text-align: center">6月</th>
+    	
+    		<th colspan="2" style="text-align: center">7月</th>
+    	
+  </tr>
+  <tr class="tab-th-2">
+   		
+    		<th style="text-align: center">1</th>
+    	
+    		<th style="text-align: center">2</th>
+    	
+    		<th style="text-align: center">3</th>
+    	
+    		<th style="text-align: center">4</th>
+    	
+    		<th style="text-align: center">5</th>
+    	
+    		<th style="text-align: center">6</th>
+    	
+    		<th style="text-align: center">7</th>
+    	
+    		<th style="text-align: center">8</th>
+    	
+    		<th style="text-align: center">9</th>
+    	
+    		<th style="text-align: center">9</th>
+    	
+    		<th style="text-align: center">10</th>
+    	
+    		<th style="text-align: center">11</th>
+    	
+    		<th style="text-align: center">12</th>
+    	
+    		<th style="text-align: center">13</th>
+    	
+    		<th style="text-align: center">13</th>
+    	
+    		<th style="text-align: center">14</th>
+    	
+    		<th style="text-align: center">15</th>
+    	
+    		<th style="text-align: center">16</th>
+    	
+    		<th style="text-align: center">17</th>
+    	
+    		<th style="text-align: center">18</th>
+    	
+    		<th style="text-align: center">19</th>
+    	
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+  	<th style="">一</th>
+  	 
+  	 	<td id="2024-03-04" title="
+农历：2024年一月廿四
+  	 	">4</td>
+  	 
+  	 	<td id="2024-03-11" title="
+农历：2024年二月初二
+  	 	">11</td>
+  	 
+  	 	<td id="2024-03-18" title="
+农历：2024年二月初九
+  	 	">18</td>
+  	 
+  	 	<td id="2024-03-25" title="
+农历：2024年二月十六
+  	 	">25</td>
+  	 
+  	 	<td id="2024-04-01" title="
+农历：2024年二月廿三
+  	 	">1</td>
+  	 
+  	 	<td id="2024-04-08" title="
+农历：2024年二月卅十
+  	 	">8</td>
+  	 
+  	 	<td id="2024-04-15" title="
+农历：2024年三月初七
+  	 	">15</td>
+  	 
+  	 	<td id="2024-04-22" title="
+农历：2024年三月十四
+  	 	">22</td>
+  	 
+  	 	<td id="2024-04-29" title="
+农历：2024年三月廿一
+  	 	">29</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-05-06" title="
+农历：2024年三月廿八
+  	 	">6</td>
+  	 
+  	 	<td id="2024-05-13" title="
+农历：2024年四月初六
+  	 	">13</td>
+  	 
+  	 	<td id="2024-05-20" title="
+农历：2024年四月十三
+  	 	">20</td>
+  	 
+  	 	<td id="2024-05-27" title="
+农历：2024年四月廿十
+  	 	">27</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-06-03" title="
+农历：2024年四月廿七
+  	 	">3</td>
+  	 
+  	 	<td id="2024-06-10" title="
+农历：2024年五月初五
+  	 	">10</td>
+  	 
+  	 	<td id="2024-06-17" title="
+农历：2024年五月十二
+  	 	">17</td>
+  	 
+  	 	<td id="2024-06-24" title="
+农历：2024年五月十九
+  	 	">24</td>
+  	 
+  	 	<td id="2024-07-01" title="
+农历：2024年五月廿六
+  	 	">1</td>
+  	 
+  	 	<td id="2024-07-08" title="
+农历：2024年六月初三
+  	 	">8</td>
+  	 
+  </tr>
+  <tr>
+     <th style="">二</th>
+     
+  	 	<td id="2024-03-05" title="
+农历：2024年一月廿五
+  	 	">5</td>
+  	 
+  	 	<td id="2024-03-12" title="
+农历：2024年二月初三
+  	 	">12</td>
+  	 
+  	 	<td id="2024-03-19" title="
+农历：2024年二月初十
+  	 	">19</td>
+  	 
+  	 	<td id="2024-03-26" title="
+农历：2024年二月十七
+  	 	">26</td>
+  	 
+  	 	<td id="2024-04-02" title="
+农历：2024年二月廿四
+  	 	">2</td>
+  	 
+  	 	<td id="2024-04-09" title="
+农历：2024年三月初一
+  	 	">9</td>
+  	 
+  	 	<td id="2024-04-16" title="
+农历：2024年三月初八
+  	 	">16</td>
+  	 
+  	 	<td id="2024-04-23" title="
+农历：2024年三月十五
+  	 	">23</td>
+  	 
+  	 	<td id="2024-04-30" title="
+农历：2024年三月廿二
+  	 	">30</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-05-07" title="
+农历：2024年三月廿九
+  	 	">7</td>
+  	 
+  	 	<td id="2024-05-14" title="
+农历：2024年四月初七
+  	 	">14</td>
+  	 
+  	 	<td id="2024-05-21" title="
+农历：2024年四月十四
+  	 	">21</td>
+  	 
+  	 	<td id="2024-05-28" title="
+农历：2024年四月廿一
+  	 	">28</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-06-04" title="
+农历：2024年四月廿八
+  	 	">4</td>
+  	 
+  	 	<td id="2024-06-11" title="
+农历：2024年五月初六
+  	 	">11</td>
+  	 
+  	 	<td id="2024-06-18" title="
+农历：2024年五月十三
+  	 	">18</td>
+  	 
+  	 	<td id="2024-06-25" title="
+农历：2024年五月廿十
+  	 	">25</td>
+  	 
+  	 	<td id="2024-07-02" title="
+农历：2024年五月廿七
+  	 	">2</td>
+  	 
+  	 	<td id="2024-07-09" title="
+农历：2024年六月初四
+  	 	">9</td>
+  	 
+  </tr>
+  <tr>
+    <th style="">三</th>
+   	 
+  	 	<td id="2024-03-06" title="
+农历：2024年一月廿六
+  	 	">6</td>
+  	 
+  	 	<td id="2024-03-13" title="
+农历：2024年二月初四
+  	 	">13</td>
+  	 
+  	 	<td id="2024-03-20" title="
+农历：2024年二月十一
+  	 	">20</td>
+  	 
+  	 	<td id="2024-03-27" title="
+农历：2024年二月十八
+  	 	">27</td>
+  	 
+  	 	<td id="2024-04-03" title="
+农历：2024年二月廿五
+  	 	">3</td>
+  	 
+  	 	<td id="2024-04-10" title="
+农历：2024年三月初二
+  	 	">10</td>
+  	 
+  	 	<td id="2024-04-17" title="
+农历：2024年三月初九
+  	 	">17</td>
+  	 
+  	 	<td id="2024-04-24" title="
+农历：2024年三月十六
+  	 	">24</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-05-01" title="
+农历：2024年三月廿三
+  	 	">1</td>
+  	 
+  	 	<td id="2024-05-08" title="
+农历：2024年四月初一
+  	 	">8</td>
+  	 
+  	 	<td id="2024-05-15" title="
+农历：2024年四月初八
+  	 	">15</td>
+  	 
+  	 	<td id="2024-05-22" title="
+农历：2024年四月十五
+  	 	">22</td>
+  	 
+  	 	<td id="2024-05-29" title="
+农历：2024年四月廿二
+  	 	">29</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-06-05" title="
+农历：2024年四月廿九
+  	 	">5</td>
+  	 
+  	 	<td id="2024-06-12" title="
+农历：2024年五月初七
+  	 	">12</td>
+  	 
+  	 	<td id="2024-06-19" title="
+农历：2024年五月十四
+  	 	">19</td>
+  	 
+  	 	<td id="2024-06-26" title="
+农历：2024年五月廿一
+  	 	">26</td>
+  	 
+  	 	<td id="2024-07-03" title="
+农历：2024年五月廿八
+  	 	">3</td>
+  	 
+  	 	<td id="2024-07-10" title="
+农历：2024年六月初五
+  	 	">10</td>
+  	 
+  </tr>
+  <tr>
+    <th style="">四</th>
+    
+  	 	<td id="2024-03-07" title="
+农历：2024年一月廿七
+  	 	">7</td>
+  	 
+  	 	<td id="2024-03-14" title="
+农历：2024年二月初五
+  	 	">14</td>
+  	 
+  	 	<td id="2024-03-21" title="
+农历：2024年二月十二
+  	 	">21</td>
+  	 
+  	 	<td id="2024-03-28" title="
+农历：2024年二月十九
+  	 	">28</td>
+  	 
+  	 	<td id="2024-04-04" title="
+农历：2024年二月廿六
+  	 	">4</td>
+  	 
+  	 	<td id="2024-04-11" title="
+农历：2024年三月初三
+  	 	">11</td>
+  	 
+  	 	<td id="2024-04-18" title="
+农历：2024年三月初十
+  	 	">18</td>
+  	 
+  	 	<td id="2024-04-25" title="
+农历：2024年三月十七
+  	 	">25</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-05-02" title="
+农历：2024年三月廿四
+  	 	">2</td>
+  	 
+  	 	<td id="2024-05-09" title="
+农历：2024年四月初二
+  	 	">9</td>
+  	 
+  	 	<td id="2024-05-16" title="
+农历：2024年四月初九
+  	 	">16</td>
+  	 
+  	 	<td id="2024-05-23" title="
+农历：2024年四月十六
+  	 	">23</td>
+  	 
+  	 	<td id="2024-05-30" title="
+农历：2024年四月廿三
+  	 	">30</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-06-06" title="
+农历：2024年五月初一
+  	 	">6</td>
+  	 
+  	 	<td id="2024-06-13" title="
+农历：2024年五月初八
+  	 	">13</td>
+  	 
+  	 	<td id="2024-06-20" title="
+农历：2024年五月十五
+  	 	">20</td>
+  	 
+  	 	<td id="2024-06-27" title="
+农历：2024年五月廿二
+  	 	">27</td>
+  	 
+  	 	<td id="2024-07-04" title="
+农历：2024年五月廿九
+  	 	">4</td>
+  	 
+  	 	<td id="2024-07-11" title="
+农历：2024年六月初六
+  	 	">11</td>
+  	 
+  </tr>
+  <tr>
+     <th style="">五</th>
+  	 
+  	 	<td id="2024-03-08" title="
+农历：2024年一月廿八
+  	 	">8</td>
+  	 
+  	 	<td id="2024-03-15" title="
+农历：2024年二月初六
+  	 	">15</td>
+  	 
+  	 	<td id="2024-03-22" title="
+农历：2024年二月十三
+  	 	">22</td>
+  	 
+  	 	<td id="2024-03-29" title="
+农历：2024年二月廿十
+  	 	">29</td>
+  	 
+  	 	<td id="2024-04-05" title="
+农历：2024年二月廿七
+  	 	">5</td>
+  	 
+  	 	<td id="2024-04-12" title="
+农历：2024年三月初四
+  	 	">12</td>
+  	 
+  	 	<td id="2024-04-19" title="
+农历：2024年三月十一
+  	 	">19</td>
+  	 
+  	 	<td id="2024-04-26" title="
+农历：2024年三月十八
+  	 	">26</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-05-03" title="
+农历：2024年三月廿五
+  	 	">3</td>
+  	 
+  	 	<td id="2024-05-10" title="
+农历：2024年四月初三
+  	 	">10</td>
+  	 
+  	 	<td id="2024-05-17" title="
+农历：2024年四月初十
+  	 	">17</td>
+  	 
+  	 	<td id="2024-05-24" title="
+农历：2024年四月十七
+  	 	">24</td>
+  	 
+  	 	<td id="2024-05-31" title="
+农历：2024年四月廿四
+  	 	">31</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-06-07" title="
+农历：2024年五月初二
+  	 	">7</td>
+  	 
+  	 	<td id="2024-06-14" title="
+农历：2024年五月初九
+  	 	">14</td>
+  	 
+  	 	<td id="2024-06-21" title="
+农历：2024年五月十六
+  	 	">21</td>
+  	 
+  	 	<td id="2024-06-28" title="
+农历：2024年五月廿三
+  	 	">28</td>
+  	 
+  	 	<td id="2024-07-05" title="
+农历：2024年五月卅十
+  	 	">5</td>
+  	 
+  	 	<td id="2024-07-12" title="
+农历：2024年六月初七
+  	 	">12</td>
+  	 
+  </tr>
+ <tr class="tab-col-2">
+    <td style="">六</td>
+  	
+  	 	<td id="2024-03-09" title="
+农历：2024年一月廿九
+  	 	">9</td>
+  	 
+  	 	<td id="2024-03-16" title="
+农历：2024年二月初七
+  	 	">16</td>
+  	 
+  	 	<td id="2024-03-23" title="
+农历：2024年二月十四
+  	 	">23</td>
+  	 
+  	 	<td id="2024-03-30" title="
+农历：2024年二月廿一
+  	 	">30</td>
+  	 
+  	 	<td id="2024-04-06" title="
+农历：2024年二月廿八
+  	 	">6</td>
+  	 
+  	 	<td id="2024-04-13" title="
+农历：2024年三月初五
+  	 	">13</td>
+  	 
+  	 	<td id="2024-04-20" title="
+农历：2024年三月十二
+  	 	">20</td>
+  	 
+  	 	<td id="2024-04-27" title="
+农历：2024年三月十九
+  	 	">27</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-05-04" title="
+农历：2024年三月廿六
+  	 	">4</td>
+  	 
+  	 	<td id="2024-05-11" title="
+农历：2024年四月初四
+  	 	">11</td>
+  	 
+  	 	<td id="2024-05-18" title="
+农历：2024年四月十一
+  	 	">18</td>
+  	 
+  	 	<td id="2024-05-25" title="
+农历：2024年四月十八
+  	 	">25</td>
+  	 
+  	 	<td id="" title="
+  	 	"></td>
+  	 
+  	 	<td id="2024-06-01" title="
+农历：2024年四月廿五
+  	 	">1</td>
+  	 
+  	 	<td id="2024-06-08" title="
+农历：2024年五月初三
+  	 	">8</td>
+  	 
+  	 	<td id="2024-06-15" title="
+农历：2024年五月初十
+  	 	">15</td>
+  	 
+  	 	<td id="2024-06-22" title="
+农历：2024年五月十七
+  	 	">22</td>
+  	 
+  	 	<td id="2024-06-29" title="
+农历：2024年五月廿四
+  	 	">29</td>
+  	 
+  	 	<td id="2024-07-06" title="
+农历：2024年六月初一
+  	 	">6</td>
+  	 
+  	 	<td id="2024-07-13" title="
+农历：2024年六月初八
+  	 	">13</td>
+  	 
+  </tr>
+  
+	  <tr class="tab-col-2">
+	     <td style="">日</td>
+	  	 
+	  	 	<td id="2024-03-10" title="
+农历：2024年二月初一
+	  	 	">10</td>
+	  	 
+	  	 	<td id="2024-03-17" title="
+农历：2024年二月初八
+	  	 	">17</td>
+	  	 
+	  	 	<td id="2024-03-24" title="
+农历：2024年二月十五
+	  	 	">24</td>
+	  	 
+	  	 	<td id="2024-03-31" title="
+农历：2024年二月廿二
+	  	 	">31</td>
+	  	 
+	  	 	<td id="2024-04-07" title="
+农历：2024年二月廿九
+	  	 	">7</td>
+	  	 
+	  	 	<td id="2024-04-14" title="
+农历：2024年三月初六
+	  	 	">14</td>
+	  	 
+	  	 	<td id="2024-04-21" title="
+农历：2024年三月十三
+	  	 	">21</td>
+	  	 
+	  	 	<td id="2024-04-28" title="
+农历：2024年三月廿十
+	  	 	">28</td>
+	  	 
+	  	 	<td id="" title="
+	  	 	"></td>
+	  	 
+	  	 	<td id="2024-05-05" title="
+农历：2024年三月廿七
+	  	 	">5</td>
+	  	 
+	  	 	<td id="2024-05-12" title="
+农历：2024年四月初五
+	  	 	">12</td>
+	  	 
+	  	 	<td id="2024-05-19" title="
+农历：2024年四月十二
+	  	 	">19</td>
+	  	 
+	  	 	<td id="2024-05-26" title="
+农历：2024年四月十九
+	  	 	">26</td>
+	  	 
+	  	 	<td id="" title="
+	  	 	"></td>
+	  	 
+	  	 	<td id="2024-06-02" title="
+农历：2024年四月廿六
+	  	 	">2</td>
+	  	 
+	  	 	<td id="2024-06-09" title="
+农历：2024年五月初四
+	  	 	">9</td>
+	  	 
+	  	 	<td id="2024-06-16" title="
+农历：2024年五月十一
+	  	 	">16</td>
+	  	 
+	  	 	<td id="2024-06-23" title="
+农历：2024年五月十八
+	  	 	">23</td>
+	  	 
+	  	 	<td id="2024-06-30" title="
+农历：2024年五月廿五
+	  	 	">30</td>
+	  	 
+	  	 	<td id="2024-07-07" title="
+农历：2024年六月初二
+	  	 	">7</td>
+	  	 
+	  	 	<td id="2024-07-14" title="
+农历：2024年六月初九
+	  	 	">14</td>
+	  	 
+	  </tr>
+  
+  </tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+function cshRc(){	
+//	$("#2018-09-3").addClass('nextDay2');
+	if (!$("#rcStr").founded()) {
+		return;
+	}
+	var rcStr = $("#rcStr").val();
+	var rcObj = rcStr.split("!two!");
+	for(var i=0;i<rcObj.length;i++){
+		if(rcObj[i]!=null && rcObj[i]!=""){
+			var obj = rcObj[i].split("!one!");
+			var rc_id = obj[0];
+			var rcmc = obj[1];
+			var qsrq = obj[2];
+			var jsrq = obj[3];
+			if(qsrq!="" && jsrq!=""){
+				showRc(qsrq,jsrq);
+			}
+		}
+	}
+}
+
+//在表中显示日程
+function showRc(kssj,jssj){
+	var countDate = new Date(jssj).differDays(new Date(kssj));
+	for(var i=0;i<parseInt(countDate)+1;i++){
+		var nextDate = new Date(kssj).addDays(i).toShortDateString();
+		$("#"+nextDate).addClass('nextDay');		
+	}
+}
+//在表中隐藏日程
+function hideRc(obj,kssj,jssj){						
+	var countDate = new Date(jssj).differDays(new Date(kssj));
+	for(var i=0;i<parseInt(countDate)+1;i++){
+		var nextDate = new Date(kssj).addDays(i).toShortDateString();
+		if($(obj).prop("checked")){
+			$("#"+nextDate).removeClass('nextDay');
+		}else{
+			$("#"+nextDate).addClass('nextDay');
+		}
+	}
+}
+function cxjtRc(){
+	if (!$("#dqrq").founded()) {
+		return;
+	}
+	var dqrq = $("#dqrq").val();
+	$("#"+dqrq).addClass('nextDay2');//给当前日期重新给一个样式，方便标识当前日期
+
+}
+
+cshRc();
+cxjtRc();
+
+
+
+
+</script>
+
+
+</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-dark-3 mCSB_scrollTools_vertical" style="display: block;"><a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="mCSB_buttonUp" oncontextmenu="return false;" style="display: block;"></a><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 238px; top: 0px; display: block; max-height: 229px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div><a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="mCSB_buttonDown" oncontextmenu="return false;" style="display: block;"></a></div></div></div>
+						
+						 
+					
+					 
+				</div>
+				<div class="col-md-5">
+					<div class="index_rctx" id="area_three">
+
+
+<style type="text/css">
+	.index_title span.title {
+  		font: bold 15px/35px "microsoft YaHei";
+  		padding-left: 5px;
+	}
+	.index_title{
+		width: 100%;
+    	height: 32px;
+    	border-bottom: #eeeeee;
+	}
+	.sl_nav_tabs {
+		background: #f4f4f4;
+		padding-top: 0px;
+		padding-left: 0px;
+		
+	}
+	.index_rctx .list-group-item .title {
+		padding-top: 5px;
+		margin-left:-12px;
+	}
+</style>
+<input type="hidden" name="jsgs" value="" id="jsgs">
+<script type="text/javascript">
+	//获取更多链接的href,并赋值
+	var hrefz;
+	if($("#jsgs").val()>1){
+		hrefz = document.getElementById("xxyeqian").getElementsByTagName("a")[2].getAttribute('href');
+	}else{
+		hrefz = document.getElementById("xxyeqian").getElementsByTagName("a")[1].getAttribute('href');
+	}
+	document.getElementById("lj").href = hrefz +1;
+	
+	$('#xxTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+	 	$($(this).attr("href")).find(".chosen-select").trigger("chosen");
+	 	if($($(this).attr("href")).selector == '#home'){
+	 		document.getElementById("lj").href = hrefz +1;
+	 	}else{
+	 		document.getElementById("lj").href = hrefz +2;
+	 	}
+	 	if($($(this).attr("href")).selector == '#programme'){
+	 		$("#dbsygd").hide();
+	 	}else{
+	 		$("#dbsygd").show();
+	 	}
+	});
+	
+	//更新消息状态
+	$("#home").off("click","a[name='xxdlTail1']").on("click","a[name='xxdlTail1']",function(){
+		$.post(_path + '/xtgl/index_cxXxdlztgx.html',{zjxx:$(this).attr("data-zjxx")},function(data){},'json');
+		var tkxx = $(this).attr("data-tkxx"); 
+		$.showDialog(_path + "/xtgl/index_cxTtkxx.html",'消息查看',$.extend(true,{},viewConfig,{
+			"width":"1000px",
+			"data":{"tkxx":tkxx}
+		}));
+	});
+	
+	$("#profile").off("click","a[name='xxdlTail1']").on("click","a[name='xxdlTail1']",function(){
+		$.post(_path + '/xtgl/index_cxXxdlztgx.html',{zjxx:$(this).attr("data-zjxx")},function(data){},'json');
+		var tkxx = $(this).attr("data-tkxx");
+		$.showDialog(_path + "/xtgl/index_cxTtkxx.html",'消息查看',$.extend(true,{},viewConfig,{
+			"width":"1000px",
+			"data":{"tkxx":tkxx}
+		}));
+	});
+	 
+	$("#programme").off("click","a[name='programmeDetail']").on("click","a[name='programmeDetail']",function(){
+		var sxdm = $(this).attr("data-sxdm");
+		var mxlx = $(this).attr("data-mxlx");
+		if(mxlx=='1'){
+			var dyym = $(this).attr("data-dyym");
+			openWin('..' + dyym, { 
+				'gnmkdm': sxdm
+			}, true);
+		}else{
+			$.showDialog(_path + "/xtgl/index_cxProgrammeDetail.html",$("#localChange").val()=='en_US'?'Detail':'日程明细',$.extend(true,{},viewConfig,{
+				"width":"1000px",
+				"data":{"gnmkdm_ej":sxdm}
+			}));
+		}
+	});
+</script>
+<input type="hidden" name="messageListSize" value="0" id="messageListSize">
+
+	<div id="xxyeqian" class="widget-toolbar no-border">
+		<ul class="nav nav-tabs sl_nav_tabs" id="xxTab">
+			<li class="active">
+				<a data-toggle="tab" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#home">
+					<h5 class="index_title"><span class="title">消息</span></h5>
+				</a>
+			</li>
+			
+			
+			<p align="right" id="dbsygd" style="padding-top: 15px;font-size:16px;padding-right: 15px;"><a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_cxDbsy.html?flag=1" target="_blank" id="lj">更多</a></p>
+		</ul>
+	</div>
+
+<div class="tab-content">
+	<div id="home" class="tab-pane in active">
+		<div class="list-group">
+		
+		
+		</div>
+	</div>
+	<div id="profile" class="tab-pane">
+		<div style="display: block;">
+			<div class="list-group">
+				
+				
+				
+				<div><p style="color:brown;position:absolute;bottom:0px;padding:15px;margin:0px;">提示:此页消息查看需先切换至对应的角色</p></div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="programme" class="tab-pane">
+		<div style="display: block;">
+			<div class="list-group">
+				
+				
+					<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+				
+					<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+				
+					<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+				
+					<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+				
+					<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function (){
+		var messageListSize = $("#messageListSize").val();
+		if(messageListSize != null && 0 < messageListSize){
+			$.confirm("您有未读消息，是否打开消息总览页面？",function(result){
+				if(result){
+					openWin(_path + '/xtgl/index_cxDbsy.html?flag=1', {}, true);
+				}
+			});
+		}
+	});
+</script>
+</div>
+				</div>
+				<div class="col-md-7">
+					<div class="index_rctx" id="area_four">
+
+
+
+
+	<script type="text/javascript">
+		$('#cjksTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		 	if($($(this).attr("href")).selector == '#exam'){
+		 		$("#cjgd").hide();
+		 		$("#ksgd").show();
+		 	}else{
+		 		$("#cjgd").show();
+		 		$("#ksgd").hide();
+		 	}
+		});
+	</script>
+
+	<div id="cjksDiv" class="widget-toolbar no-border">
+		<ul class="nav nav-tabs sl_nav_tabs" id="cjksTab">
+			<li class="active">
+				<a data-toggle="tab" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#kshome">
+					<h5 class="index_title"><span class="title">成绩</span></h5>
+				</a>
+			</li>
+			
+				<li>
+					<a data-toggle="tab" href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#exam">
+						<h5 class="index_title"><span class="title">考试</span></h5>
+					</a>
+				</li>
+			
+			
+				<div>
+				    <p align="right" id="cjgd" style="padding-top: 15px;font-size:16px;padding-right: 15px;"><a onclick="clickMenu(&#39;N305005&#39;,&#39;/cjcx/cjcx_cxDgXscj.html&#39;,&#39;学生成绩查询&#39;); return false;" target="_blank">更多</a></p>
+				</div>
+			
+			
+		</ul>
+	</div>
+	
+	<div class="tab-content">
+		<div id="kshome" class="tab-pane in active">
+			<div class="list-group">
+			
+			
+				<a onclick="clickMenu(&#39;N305005&#39;,&#39;/cjcx/cjcx_cxDgXscj.html&#39;,&#39;学生成绩查询&#39;); return false;" target="_blank" class="list-group-item">
+				<span class="title">
+				2023-2024-1-通识必修课-体育Ⅲ
+				</span>
+				<span class="fraction float_r">91</span>
+			</a>
+				
+			
+			
+				<a onclick="clickMenu(&#39;N305005&#39;,&#39;/cjcx/cjcx_cxDgXscj.html&#39;,&#39;学生成绩查询&#39;); return false;" target="_blank" class="list-group-item">
+				<span class="title">
+				2023-2024-1-专业必修课-Python基本应用
+				</span>
+				<span class="fraction float_r">75</span>
+			</a>
+				
+			
+			
+				<a onclick="clickMenu(&#39;N305005&#39;,&#39;/cjcx/cjcx_cxDgXscj.html&#39;,&#39;学生成绩查询&#39;); return false;" target="_blank" class="list-group-item">
+				<span class="title">
+				2023-2024-1-专业必修课-计算机操作系统
+				</span>
+				<span class="fraction float_r">74</span>
+			</a>
+				
+			
+			
+				<a onclick="clickMenu(&#39;N305005&#39;,&#39;/cjcx/cjcx_cxDgXscj.html&#39;,&#39;学生成绩查询&#39;); return false;" target="_blank" class="list-group-item">
+				<span class="title">
+				2023-2024-1-专业必修课-SQL Server数据库技术
+				</span>
+				<span class="fraction float_r">86</span>
+			</a>
+				
+			
+			
+				<a onclick="clickMenu(&#39;N305005&#39;,&#39;/cjcx/cjcx_cxDgXscj.html&#39;,&#39;学生成绩查询&#39;); return false;" target="_blank" class="list-group-item">
+				<span class="title">
+				2023-2024-1-专业必修课-Web技术基础
+				</span>
+				<span class="fraction float_r">93</span>
+			</a>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			
+			</div>
+		</div>
+		
+			<div id="exam" class="tab-pane">
+				<div style="display: block;">
+					<div class="list-group">
+						
+						
+							<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+						
+							<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+						
+							<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+						
+							<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+						
+							<a href="https://jwgl.lyu.edu.cn/jwglxt/xtgl/index_initMenu.html?jsdm=xs&amp;_t=1706323808948#" class="list-group-item">&nbsp;<span class="time float_r">&nbsp;</span></a>
+						
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!-- footer --> 
+
+
+
+
+
+
+
+
+<!-- footer --> 
+
+<div id="footerID" class="footer" style="background-color: ">
+	
+	<p>版权所有© Copyright 1999-2023 正方软件股份有限公司　　中国·杭州西湖区紫霞街176号 互联网创新创业园2号301&nbsp;&nbsp;&nbsp;版本V-8.0.0</p>
+</div>
+
+
+
+
+<script type="text/javascript">
+	//系统中页面底部的时间随系统时间来定
+	/* var date=new Date;
+	var year=date.getFullYear();
+	var s = $("#footerID").text().indexOf('-');
+	var textNr =$("#footerID").text().substr(0,s+1)+year+$("#footerID").text().substr(s+5);
+	$("#footerID").text("");
+	$("#footerID").text(textNr); */
+
+</script>
+<!-- footer-end -->
+<!-- footer-end -->
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/jquery.jqgrid.css">
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.jqgrid.src-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.jqgrid.contact-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/zh_CN.js(1).下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.jqgrid.settings.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.jqGrid-min.js.下载" charset="utf-8"></script>
+<!--jQuery浏览器检测 -->
+<!--jQuery.validation -->
+<link rel="stylesheet" type="text/css" href="./教学管理信息服务平台_files/jquery.validate-min.css">
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.validate-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.validate.contact-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jquery.validate.methods.contact-min.js.下载" charset="utf-8"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/zh_CN-min.js(1).下载" charset="utf-8"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$('[data-toggle*="validation"]').trigger("validation");
+	});
+</script>
+
+<!-- 软件评价 相应ini文件引用-->
+
+
+<script type="text/javascript" src="./教学管理信息服务平台_files/jsbn.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/prng4.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/rng.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/rsa.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/base64.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/disk.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/device.js(1).下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/index_v5.js.下载"></script>
+<script type="text/javascript" src="./教学管理信息服务平台_files/jwglxt_index.js.下载"></script>
+
+
+
+<script type="text/javascript">
+$(function() {
+	$(document).off('click', '#js_btn').on('click', '#js_btn', function(e) {
+	     $("#myDiv").css("display","");
+	});
+	localStorage.setItem('language',$("#localChange").val());//把值放入localStorage
+	if($("#localChange").val()=='en_US'){//切换系统名称为英文的
+		$("#xtmc").text("Teaching integrated information service platform");
+		$("title").text("Teaching integrated information service platform")
+		$("a.zh").hide();
+		$("a.en").show();
+	}else{
+		$("a.zh").show();
+		$("a.en").hide();
+	}
+});
+
+function changePage(pageStyle){
+	window.location.href=_path+'/xtgl/index_initMenu.html?pageStyle='+pageStyle;
+}
+
+if($("#info").val() != "" && $.trim($("#info").val()).length != 0){
+	if($("#info").val().indexOf("欠费")>-1){
+		$.alert($("#info").val());
+	}else{
+		$.success($("#info").val());
+	}
+}
+
+//是否开启硬盘序列号绑定访问限制
+if("1" == $("#sfkqypxlhbdfwxz").val()){
+	var diskLicence=getDiskLicence();
+	console.log("diskLicence:"+diskLicence);
+	if(diskLicence!=null&diskLicence!=''){
+		jQuery.ajaxSetup({async:false});
+		$.post(_path + "/xtgl/index_setDiskLicence.html?diskLicence="+diskLicence,function(){},'json');
+		jQuery.ajaxSetup({async:true});
+	}
+}
+
+//定时器定时发送请求更新登录状态信息
+if("1" == $("#sftjdlztxx").val()){
+	var int=self.setInterval("clock()",$("#dstjdlztsj").val()* 1000 * 60);
+	function clock(){
+		jQuery.ajaxSetup({async:false});
+		$.post(_path + "/xtgl/index_cxGxDlztxx.html?dlztxxtj_id="+$("#dlztxxtj_id").val(),function(){},'json');
+		jQuery.ajaxSetup({async:true});
+	}
+}
+
+if("1"==$("#xssymxjyjtxfs").val()){
+	if("0"==$("#xsxjyjqrzt").val()){
+		if($("#xsXyyjcs").val() && $("#xsXyyjcs").val()!=0){
+			getXsxjyj();
+		}
+	}
+}else{
+	getXsxkzt();	//选课业务选择判断(演示用)
+	getSytxzt();	//首页提醒状态
+}
+
+//判断是否强制设置密保信息
+if("1"==$("#sfqztxmb").val()&&!"1"==$("#mbtxqk").val()){
+	$.alert("请填写密保问题!",function(){
+		$("#updateGrxx").click();
+	});
+}
+
+
+
+</script>
+
+
+</body><!--jQuery.jqGrid --></html>

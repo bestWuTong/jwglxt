@@ -1,0 +1,78 @@
+// 表格过长时 底部固定公共方法
+$(document).ready(function () {
+	$('body').append('<div id="lk_scrollbar" style="display: none;height: 18px;padding: 2px;background: #f1f1f1;position: fixed;left: 50%;bottom: 28px;transform: translateX(-50%);z-index: 99;border-radius: 5px;overflow:hidden;"><div id="lk_handle" style="height: 14px;background: #c1c1c1;position: absolute;cursor: pointer;left: 0;"></div></div>')
+	oParent = $('#lk_scrollbar');
+    oDiv1 = $('#lk_handle');
+    oDiv2 = $('.ui-jqgrid-view');
+    oDiv3 = $('.ui-jqgrid-hdiv');
+    oDiv4 = $('.ui-jqgrid-bdiv');
+    oParent.css('width', oDiv2.width())
+    
+    setTimeout(function () {
+        reScrollBox()
+        if(!oDiv3.next().hasClass('ui-jqgrid-bdiv')) {
+        	oDiv3.next().remove()
+        }
+    }, 1000)
+    //
+    reScrollBox = function () {
+        maxW = oDiv3.find('table').width();
+        minW = oDiv2.width();
+        scale = minW / maxW;
+        oDiv1.width(oParent.width() * scale);
+    } 
+    
+  //拖动事件方法
+    function moveDownSlide(l) {
+        if (l < 0) {
+            l = 0;
+        } else if (l > oParent.width() - oDiv1.width()) {
+            l = oParent.width() - oDiv1.width();
+        }
+        oDiv1.css('left', l);
+        var scale = l / (oParent.width() - oDiv1.width());
+        oDiv3.scrollLeft((oDiv3[0].scrollWidth - oDiv2.width()) * scale);
+        oDiv4.scrollLeft((oDiv3[0].scrollWidth - oDiv2.width()) * scale);
+
+    }
+    //鼠标拖动事件
+    oDiv1[0].onmousedown = function (ev) {
+        ev = ev || window.event;
+        var disX = ev.clientX - oDiv1.position().left;
+        document.onmousemove = function (ev) {
+            ev = ev || window.event;
+            var l = ev.clientX - disX;
+            moveDownSlide(l);
+        };
+        document.onmouseup = function () {
+            document.onmousemove = null;
+            document.onmouseup = null;
+        };
+        $(document).bind('selectstart', function (ev) {  // 防止页面内容被选中 IE 
+            return false;
+        });
+    };
+	
+    
+    function showScroll() {
+    	var t_top = $('.ui-jqgrid-view').offset().top; 
+    	var t_bottom = $('.ui-jqgrid-view').height(); 
+ 		var window_height = $(window).height(); 
+ 		let flagT = window_height - t_top - $(document).scrollTop();
+ 		let flagB = window_height - t_bottom - t_top + $(document).scrollTop();
+ 		console.log(flagT, flagB)
+
+ 		if(flagT > 0 && flagB < 30) {
+ 			$("#lk_scrollbar").show()
+ 			$("#pg_pager").css({'position': 'fixed','bottom': 0,'background': '#f9f9f9','width': oDiv2.width()})
+ 			$("#pg_pager1").css({'position': 'fixed','bottom': 0,'background': '#f9f9f9','width': oDiv2.width()})
+ 		} else {
+ 			$("#lk_scrollbar").hide()
+ 			$("#pg_pager").css({'position': 'relative','bottom': 0,'background': 'transparent','width': oDiv2.width()})
+ 			$("#pg_pager1").css({'position': 'relative','bottom': 0,'background': 'transparent','width': oDiv2.width()})
+ 		}
+    }
+    $(window).on('scroll', function (e) {
+    	showScroll()
+	})
+})
